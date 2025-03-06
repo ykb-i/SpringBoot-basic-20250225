@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.korit.basic.dto.GetUserResponseDto;
+<<<<<<< HEAD
+=======
+import com.korit.basic.dto.GetUserListResponseDto;
+>>>>>>> ada7c51 (2025-03-06)
 import com.korit.basic.dto.PostUserRequestDto;
 import com.korit.basic.dto.ResponseDto;
 import com.korit.basic.service.UserService;
@@ -32,6 +36,14 @@ public class UserController {
         return response;
     }
 
+<<<<<<< HEAD
+=======
+    @GetMapping()
+    public ResponseEntity<? super GetUserListResponseDto> getUserList(){
+        ResponseEntity<? super GetUserListResponseDto> response = 
+    }
+
+>>>>>>> ada7c51 (2025-03-06)
     // controller에서 무엇을 반환하는지 한눈에 보이게 해야됨
     // super : 자기 혹은 자기자신의 부모를 받을 수 있음
     @GetMapping("/{userId}")

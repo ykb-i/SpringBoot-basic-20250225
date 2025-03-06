@@ -11,6 +11,10 @@ import com.korit.basic.dto.PostUserRequestDto;
 import com.korit.basic.dto.ResponseDto;
 import com.korit.basic.entity.UserEntity;
 import com.korit.basic.repository.UserRepository;
+<<<<<<< HEAD
+=======
+import com.korit.basic.dto.GetUserListResponseDto;
+>>>>>>> ada7c51 (2025-03-06)
 import com.korit.basic.dto.GetUserResponseDto;
 import com.korit.basic.service.UserService;
 
@@ -120,6 +124,14 @@ public class UserServiceImplement implements UserService{
 
         return ResponseDto.success(HttpStatus.OK);
     }
+<<<<<<< HEAD
+=======
+
+    @Override
+    public ResponseEntity<? super GetUserListResponseDto> getUserList() {
+        
+    }
+>>>>>>> ada7c51 (2025-03-06)
     
     // 모든 매개변수가 들어간 생성자를 이용해서 인스턴스를 만들떄 발생하는 문제
     // 모든 매개변수가 같은 타입일떄 매개변수의 순서를 변경해도 에러가 발생하지 않는다.
